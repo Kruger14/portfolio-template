@@ -1,0 +1,53 @@
+#layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#aside-container {
+    height: auto;
+    width: auto;
+    margin: 1rem;
+    top: 0;
+}
+
+#navbar-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+#pages {
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    #layout {
+        flex-direction: column;
+    }
+
+    #aside-container,
+    #navbar-container {
+        margin: 0.5rem;
+    }
+}
+
+
+@media (max-width: 320px) {
+    #layout {
+        flex-direction: column;
+    }
+
+    #aside-container,
+    #navbar-container {
+        margin: 0.25rem;
+    }
+
+    #navbar-container {
+        font-size: 0.8rem;
+    }
+
+    #aside-container {
+        font-size: 0.8rem;
+    }
+}

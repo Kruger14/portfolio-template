@@ -1,0 +1,64 @@
+.container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+@media (min-width: 640px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.portfolio-item {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bg-blue-200 {
+    background-color: #bfdbfe;
+}
+
+.bg-pink-200 {
+    background-color: #fecdd3;
+}
+
+.bg-yellow-200 {
+    background-color: #fef08a;
+}
+
+.bg-green-200 {
+    background-color: #bbf7d0;
+}
+
+.portfolio-title {
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+.portfolio-category {
+    font-size: 0.875rem;
+    color: hsl(var(--muted-foreground));
+}

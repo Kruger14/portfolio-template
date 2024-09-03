@@ -1,0 +1,142 @@
+/* Base Styles */
+.about-container {
+    max-width: 900px;
+    border: 1px solid black;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+}
+
+.container {
+    background-color: #f8fafc;
+    color: #1f2937;
+    padding: 1.5rem;
+}
+
+.content {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.divider {
+    border-top: 4px solid #3b82f6;
+    width: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.description {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #1f2937;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card-icon {
+    margin-right: 0.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.card-description {
+    color: #6b7280;
+}
+
+/* Responsive Styles */
+@media (min-width: 340px) {
+    .about-container {
+        padding: 1.5rem;
+    }
+
+    .title {
+        font-size: 1.875rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .divider {
+        width: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.125rem;
+    }
+
+    .card-description {
+        font-size: 0.875rem;
+    }
+}
+
+@media (min-width: 640px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-container {
+        height: 800px;
+        width: 900px;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 2.25rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
