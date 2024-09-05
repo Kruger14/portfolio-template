@@ -6,13 +6,22 @@ import About from './pages/About';
 import Contactme from './pages/Contactme';
 import Works from './pages/Works';
 import Resume from './pages/Resume';
-
-
+import { useContext } from 'react';
+import { ThemeContext } from './context';
 function App() {
+
+  const { isDarkMode, toggleTheme } = useContext(ThemeContext);
+
   return (
     <>
       <BrowserRouter>
-        <h1>Portfolio by Kruger14</h1>
+        <div id='mainone'>
+          <h1>Portfolio by Kruger14</h1>
+          <p class="footer">Design insired from  <a href='https://bostami-bootstrap-nextjs.vercel.app/#demo'>bostami-bootstrap-nextjs</a></p>
+          <div id='toggle' onClick={toggleTheme}>
+            {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+          </div>
+        </div>
         <div id='layout'>
           <div id='aside-container'>
             <Profilecard />

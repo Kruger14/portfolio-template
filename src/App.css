@@ -1,3 +1,26 @@
+body.light {
+    background-color: white;
+    color: black;
+}
+
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+#mainone {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+#toggle {
+    padding: 5px;
+    border-radius: 16px;
+    background-color: burlywood;
+}
+
 #layout {
     display: flex;
     flex-direction: row;
@@ -30,10 +53,30 @@
     #navbar-container {
         margin: 0.5rem;
     }
+
+    #mainone {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #toggle {
+        padding: 10px;
+        font-size: 18px;
+        /* Larger font size for small screens */
+    }
 }
 
 
 @media (max-width: 320px) {
+
+    #toggle {
+        padding: 12px;
+        font-size: 20px;
+        /* Larger font size for extra-small screens */
+        border-radius: 20px;
+        /* Slightly larger border-radius for better appearance */
+    }
+
     #layout {
         flex-direction: column;
     }
