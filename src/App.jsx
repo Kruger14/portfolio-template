@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <div id='mainone'>
           <h1>Portfolio by Kruger14</h1>
-          <p class="footer">Design insired from  <a href='https://bostami-bootstrap-nextjs.vercel.app/#demo'>bostami-bootstrap-nextjs</a></p>
+          <p className="footer">Design insired from  <a href='https://bostami-bootstrap-nextjs.vercel.app/#demo'>bostami-bootstrap-nextjs</a></p>
           <div id='toggle' onClick={toggleTheme}>
             {isDarkMode ? 'Light Mode' : 'Dark Mode'}
           </div>
